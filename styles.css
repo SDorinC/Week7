@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 600px;
+    height: 900px;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: cadetblue;
+    background-color: rgb(216, 242, 255);
+    padding: 20px;
+}
+
+#sec {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#newToDo {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#submit {
+    align-self: flex-end;
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+hr {
+    width: 600px;
+    height: 2px;
+    border-style: none;
+    background-color: black;
+}
+
+#list {
+    height: 740px;
+    padding: 10px 10px;
+    margin-bottom: 0;
+    border-style: groove;
+    border-color: cadetblue;
+    border-radius: 10px;
+    border-width: 3px;
+    overflow-y: auto;
+}
+
+li {
+    position: relative;
+    overflow-wrap: break-word;
+    margin-left: 15px;
+    padding-right: 40px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    list-style-type: square;
+}
+
+.delete {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-style: none;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+
+.edit {
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    border-style: none;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    color: blue;
+}
+
+#popUp {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -150px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    left: 50%;
+    top: 600px;
+}
+
+#popUp.show {
+    visibility: visible;
+}
